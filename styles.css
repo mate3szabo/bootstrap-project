@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    font-size: 1rem;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.gradient {
+    background: rgb(72,216,255,1);
+    background: linear-gradient(0deg,
+            rgba(72,216,255,1) 0%,
+            rgba(0, 0, 0, 1) 100%);
+}
+
+.page-header {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.page-header img {
+border-radius: 3%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: larger;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(255,255,255,1) 100%);
+}
+
+.btn-social-icon {
+    color: white;
+}

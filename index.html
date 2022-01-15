@@ -5,158 +5,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap project</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Options</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header gradient">
+        <div class="container pt-3">
+            <div class="row align-items-center justify-content-center mt-5">
+                <div class="col-md-5">
+                    <h1 class="mb-4" style="font-size: 3em;">firstName lastName</h1>
+                    <h5 style="font-size: 2em;">Web developer</h5>
+                </div>
+                <div class="col-md-7">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="images/image1.jpeg" class="d-block w-100" alt="First project">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First project</h5>
+                                    <p>Description of first project</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="images/image2.jpg" class="d-block w-100" alt="Second project">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second project</h5>
+                                    <p>Description of second project</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="images/image3.jpg" class="d-block w-100" alt="Third project">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third project</h5>
+                                    <p>Description of third project</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
-        </nav>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,256L48,261.3C96,267,192,277,288,256C384,235,480,181,576,176C672,171,768,213,864,224C960,235,1056,213,1152,192C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
     </header>
-    <main class="my-5">
+
+    <section>
+        <div class="container-fluid text-center">
+            <div class="row g-2 mb-5 justify-content-center">
+                <div class="col-xl-1 col-lg-2 col-sm-3 mx-3"><img src="images/logos/html5.svg" alt="html logo"
+                        class="src"></div>
+                <div class="col-xl-1 col-lg-2 col-sm-3 mx-3"><img src="images/logos/css3.com.svg" alt="css logo"
+                        class="src"></div>
+                <div class="col-xl-1 col-lg-2 col-sm-3 mx-3"><img src="images/logos/javascript-icon.svg" alt="js logo"
+                        class="src"></div>
+                <div class="col-xl-1 col-lg-2 col-sm-3 mx-3"><img src="images/logos/bootstrap.svg" alt="bootstrap logo"
+                        class="src"></div>
+                <div class="col-xl-1 col-lg-2 col-sm-3 mx-3"><img src="images/logos/reactjs-icon.svg" alt="reactjs logo"
+                        class="src"></div>
+                <div class="col-xl-1 col-lg-2 col-sm-3 mx-3"><img src="images/logos/nodejs-icon.svg" alt="node logo"
+                        class="src"></div>
+                <div class="col-xl-1 col-lg-2 col-sm-3 mx-3"><img src="images/logos/expressjs-icon.svg"
+                        alt="express logo" class="src"></div>
+                <div class="col-xl-1 col-lg-2 col-sm-3 mx-3"><img src="images/logos/mongodb-icon.svg" alt="mongodb logo"
+                        class="src"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-3">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
-                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                        alt="" class="img-fluid" width="%" />
+                <div class="col-6">
+                    <p class="text-center mt-5">&copy; Mate Szabo</p>
                 </div>
-                <div class="col-md-5">
-                    <h1 class="mt-5">Tagline</h1>
-                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ab natus officiis
-                        vero voluptatum exercitationem in sint ea totam doloribus adipisci, quibusdam atque ex rerum
-                        illo! Eos soluta magnam velit.
-                    </p>
-                    <button type="button" class="btn btn-primary">Button</button>
-                </div>
-            </div>
-            <div class="row my-5">
-                <div class="col">
-                    <div class="bg-secondary text-white my-3 py-3 card text-center">
-                        <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, animi!
-                        </div>
-                    </div>
+                <div class="col-6 text-center mt-5">
+                    <a class="btn btn-social-icon" href="http://linkedin.com/"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg></a>
+                    <a class="btn btn-social-icon" href="http://github.com/"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg></a>
                 </div>
             </div>
-            <div class="row my-5">
-                <div class="col">
-                    <div class="card-group">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1515179330434-54edd3706df1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div>
-                                    <a href="#"><button type="button" class="btn btn-primary">Button</button></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1558980395-2f289089d3ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
-                                <div>
-                                    <a href="#"><button type="button" class="btn btn-primary">Button</button></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1517594632980-535c0c33173d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This card has even longer content than the first to
-                                    show that equal height action.</p>
-                                <div>
-                                    <a href="#"><button type="button" class="btn btn-primary">Button</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <h2>Get in touch</h2>
-                <div class="lead">Questions? Contact us.</div>
-            </div>
-            <div class="row justify-content-center my-5">
-                <div class="col-lg-6">
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email address:</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name:</label>
-                        <input type="name" class="form-control" id="exampleInputName1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="disabledSelect" class="form-label">Subject</label>
-                        <select id="disabledSelect" class="form-select">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                        </select>
-                    </div>
-                    <div class="input mb-3">
-                        <label for="message" class="form-label">Message:</label>
-                        <textarea class="form-control" aria-label="message" style="height: 150px;"></textarea>
-                    </div>
-                    <div class="text-center my-5">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class=" footer mt-auto py-3 bg-dark">
-        <div class="container">
-            <span class="text-muted">Copyright stuff here</span>
         </div>
     </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
